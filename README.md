@@ -20,6 +20,7 @@ If your Lambda function has outputs, specify them with the `lambda_outputs` arra
 outputs or else Cloudformation will rollback.  So even if you want to return an error you must return (an empty) value
 for all inputs.
 
+Outputs must be alphanumeric (no underscores or hyphens).
 
 ```hcl
 data "aws_lambda_function" "my_ami_query" {

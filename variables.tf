@@ -24,6 +24,6 @@ variable "lambda_function_arn" {
 }
 
 variable "timeout_in_minutes" {
-  default     = "1"
+  default     = "2"
   description = "Maximum Time to wait for a response from CloudFormation/Lambda.  The Lambda itself may have its own timeout; this does not override it."
 }
