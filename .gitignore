@@ -1,0 +1,25 @@
+# Terraform files
+.terraform
+terraform.tfstate
+terraform.tfvars
+*.tfstate*
+
+# OS X files
+.history
+.DS_Store
+
+# IntelliJ files
+.idea_modules
+*.iml
+*.iws
+*.ipr
+.idea/
+build/
+*/build/
+out/
+
+# VIM Swap files
+*.swp
+
+# ZIP files created by examples
+*.zip
