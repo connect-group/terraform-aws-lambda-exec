@@ -82,7 +82,7 @@ Examples
 Releases
 --------
 Version 1.0.2 is compatible with Terraform 0.10.x and 0.11.x
-Version 2.0.0 is compatible with Terraform 0.12.x 
+Version 2.0.0 is compatible with Terraform 0.12.20+ and 0.13.x
 
 Authors
 -------
