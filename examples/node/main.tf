@@ -1,8 +1,3 @@
-# This example uses locals which were introduced in Terrform 0.10
-terraform {
-  required_version = ">=0.10.4"
-}
-
 provider "aws" {
   region = "eu-west-1"
 }
