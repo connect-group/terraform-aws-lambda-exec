@@ -22,11 +22,7 @@ data "archive_file" "lambda_source_file_zip" {
 }
 
 resource "aws_lambda_function" "lambda" {
-  filename = substr(
-    data.archive_file.lambda_source_file_zip.output_path,
-    length(path.cwd) + 1,
-    -1,
-  )
+  filename         = "${local.lambda_source_file}.zip"
   function_name    = local.function_name
   role             = aws_iam_role.lambda.arn
   handler          = "${local.lambda_source_file_no_ext}.handler"
