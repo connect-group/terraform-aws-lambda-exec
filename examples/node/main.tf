@@ -9,13 +9,13 @@ provider "aws" {
 
 locals {
   lambda_source_file_no_ext = "node_sample"
-  runtime                   = "nodejs8.10"
+  runtime                   = "nodejs12.x"
 }
 
 module "execute" {
   source              = "../../"
   name                = "${replace(local.lambda_source_file_no_ext, "_", "-")}-example"
-  lambda_function_arn = "${aws_lambda_function.lambda.arn}"
+  lambda_function_arn = aws_lambda_function.lambda.arn
 
   lambda_inputs = {
     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -29,3 +29,4 @@ module "execute" {
     "Error",
   ]
 }
+

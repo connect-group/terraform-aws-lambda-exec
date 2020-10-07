@@ -15,12 +15,12 @@ locals {
 module "execute" {
   source              = "../../"
   name                = "${replace(local.lambda_source_file_no_ext, "_", "-")}-example"
-  lambda_function_arn = "${aws_lambda_function.lambda.arn}"
+  lambda_function_arn = aws_lambda_function.lambda.arn
 
   lambda_inputs = {
     parameter_name     = "my_ssm_parameter"
     default_value      = "not found"
-    run_on_every_apply = "${timestamp()}"
+    run_on_every_apply = timestamp()
   }
 
   lambda_outputs = [
@@ -28,3 +28,4 @@ module "execute" {
     "Error",
   ]
 }
+

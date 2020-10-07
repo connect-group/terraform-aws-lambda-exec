@@ -78,6 +78,12 @@ Examples
 * [Python Get SSM Parameter or return default](https://github.com/connect-group/terraform-aws-lambda-exec/tree/master/examples/python_get_ssm_parameter)
 * For a Java example, see [cloudformation-custom-resources](https://github.com/stelligent/cloudformation-custom-resources) on GitHub
 
+
+Releases
+--------
+Version 1.0.2 is compatible with Terraform 0.10.x and 0.11.x
+Version 2.0.0 is compatible with Terraform 0.12.x 
+
 Authors
 -------
 Currently maintained by [these awesome contributors](https://github.com/connect-group/terraform-aws-lambda-exec/graphs/contributors).
